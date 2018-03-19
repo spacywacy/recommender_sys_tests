@@ -238,7 +238,7 @@ loss_func_ = pointwise_loss
 #loss_func_ = positive_loss
 net_ = bilinear(1000, 1700, 5)
 batch_size_ = 128
-epoches_ = 5
+epoches_ = 500
 wd_ = .1
 optimizer_ = optim.SGD(params=net_.parameters(), lr=.1, momentum=.9, weight_decay=1e-5)
 lr_sche_ = optim.lr_scheduler.StepLR(optimizer_, step_size=150, gamma=.5)
